@@ -27,7 +27,10 @@
 
   </header>
   <div class="content">
-    <form name="applaud" method="POST" netlify>
+    <form name="applaud" method="POST" netlify-honeypot="bot-field" netlify>
+      <p class="hidden">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+      </p>
       <p>
         <label for="fMessage" class="msg--label">
             What are you grateful for today?
